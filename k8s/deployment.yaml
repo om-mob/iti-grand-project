@@ -8,6 +8,6 @@ spec:
     spec:
       containers:
       - name: iti-grand-project
-        image: omar00101/iti-grand-project:latest
+        image: omar00101/iti-grand-project:build-3
         ports:
         - containerPort: 80
