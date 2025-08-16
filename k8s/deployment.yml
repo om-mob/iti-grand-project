@@ -1,0 +1,13 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: iti-grand-project-deployment
+spec:
+  replicas: 2
+  template:
+    spec:
+      containers:
+      - name: iti-grand-project
+        image: omar00101/iti-grand-project:latest
+        ports:
+        - containerPort: 80

@@ -1,0 +1,13 @@
+piVersion: v1
+kind: Service
+metadata:
+  name: iti-grand-project-service
+spec:
+  selector:
+    app: my-portfolio
+  type: NodePort
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+      nodePort: 30007
